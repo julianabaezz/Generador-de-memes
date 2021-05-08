@@ -1,0 +1,71 @@
+aside {
+    background-color: #252A36 ;
+    color: white;
+    height: 100vh;
+    padding: 0 15px;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+textarea {
+    padding: 5px;
+    margin: 5px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+select {
+    padding: 10px 5px;
+    margin: 5px 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.color, .background {
+    width: 50%;
+}
+
+.input-fuente {
+    width: 50%;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.btn-fuente {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.btn-fuente button {
+    width: calc(100% / 3 - 10px / 3);
+}
+
+.border-options button {
+    padding: 8px;
+    border-radius: 3px;
+    border: 0;
+    
+}
+
+.mt-5px {
+    margin-top: 5px;
+
+}
+.mb-10px{
+    margin-bottom: 10px;
+}

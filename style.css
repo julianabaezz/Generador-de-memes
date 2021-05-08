@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    overflow: scroll;
+}
+body::-webkit-scrollbar {
+    width: 1px ;
+    background-color: black;
+
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600; 
+}
+
+aside {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+}
+aside::-webkit-scrollbar {
+    width: 1px ;
+    background-color: black;
+
+}
+
+/* ESTO LO VAMOS A USAR PARA EL JS DE CAMBIO DE MODO OSCUTO A CLARO
+
+aside{
+    background-color: #f4f4f4 ;
+}
+
+body {
+    background-color: #EDEDED ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #E0E0E0;
+    color: #333030;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
