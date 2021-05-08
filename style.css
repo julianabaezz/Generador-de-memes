@@ -12,10 +12,27 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     overflow: scroll;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar {
     width: 1px ;
     background-color: black;
+
+}
+body.light {
+    --background-color: #FAFAFA;
+    --header-background-color: #E0E0E0; 
+    --main-background-color: #EEEEEE;
+    --color: #424242;
+    --hover-botones: #BDBDBD;
+}
+body.dark {
+    --background-color: #393E49;
+    --header-background-color: #191E2B;
+    --main-background-color: #30343F;
+    --color: #EEEEEE;
+    --hover-botones: #4E5565;
+    
 
 }
 
@@ -25,16 +42,23 @@ h1 {
 }
 
 aside {
+    background-color: var(--background-color);
+    color: var(--color);
     width: 20%;
     position: fixed;
     top: 0;
     right: 0;
     overflow: scroll;
+    overflow-x: hidden;
+    padding: 0 15px;
 }
 aside::-webkit-scrollbar {
     width: 1px ;
     background-color: black;
 
+}
+.hidden {
+    display: none;
 }
 
 /* ESTO LO VAMOS A USAR PARA EL JS DE CAMBIO DE MODO OSCUTO A CLARO

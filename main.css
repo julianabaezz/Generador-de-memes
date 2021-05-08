@@ -15,7 +15,7 @@ section {
 }
 
 .container {
-    background-color: #31353F;
+    background-color: var(--main-background-color);
     display: flex;
 
 }
@@ -45,6 +45,6 @@ section {
     font-size: 14px;
     border: none;
     border-radius: 5px;
-    margin-top: 15px;
+    margin: 15px 0 20px;
     padding-right: 5px;
 }

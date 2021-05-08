@@ -1,7 +1,7 @@
 
 header {
-    background-color: #191F2B;
-    color: white;
+    background-color: var(--header-background-color);
+    color: var(--color);
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -28,12 +28,12 @@ i {
     padding: 10px 0;
     border-radius: 3px;
     background-color: transparent;
-    color: white;
+    color: var(--color);
     border: none;
 }
 
 .button-nav:hover {
-    background-color: #4e5565;    
+    background-color: var(--hover-botones);    
 }
 
 .nav-icon {
