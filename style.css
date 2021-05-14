@@ -45,11 +45,11 @@ aside {
     background-color: var(--background-color);
     color: var(--color);
     width: 20%;
+    height: 100%;
+    overflow: auto;
     position: fixed;
     top: 0;
     right: 0;
-    overflow: scroll;
-    overflow-x: hidden;
     padding: 0 15px;
 }
 aside::-webkit-scrollbar {
@@ -60,7 +60,11 @@ aside::-webkit-scrollbar {
 .hidden {
     display: none;
 }
-
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* ESTO LO VAMOS A USAR PARA EL JS DE CAMBIO DE MODO OSCUTO A CLARO
 
 aside{
