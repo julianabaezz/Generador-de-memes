@@ -6,6 +6,8 @@ const asideImg = document.querySelector ('.aside-img')
 const textTheme = document.getElementById ('text-theme')
 const url = document.getElementById ('url')
 const image = document.querySelector ('.image')
+const imgColor= document.getElementById ('img-color')
+const optionsColor= document.getElementsByClassName ('options-color')
 const body = document.body
 
 // ------HEADER
@@ -22,7 +24,7 @@ btnTxtAside.addEventListener('click', ()=> {
 // --Boton tema oscuro/claro
 btnTheme.addEventListener('click', () => {
     body.classList.toggle('dark');
-    body.classList.toggle('light');  
+    body.classList.toggle('light');
     if(body.className == 'dark'){
         textTheme.innerText="Modo claro"
     }else{
@@ -33,9 +35,30 @@ btnTheme.addEventListener('click', () => {
 // ------ASIDE
 // --Imagen
 url.addEventListener ('change',  () => {
-    image.style.backgroundImage= (`url("${url.value}")`)   
-
+    image.style.backgroundImage= (`url("${url.value}")`);
+    image.style.backgroundSize= 'cover'
 })
-    // <img src="" alt="" id="img">
+imgColor.addEventListener ('input', () =>{
+    image.style.backgroundColor=(`${imgColor.value}`)
+})
+
+
+
+// for (let i=0; i < optionsColor.length; i++){
+//     const seleccionarFiltro = (e) =>{
+//     if(value==lighten){
+//             url.style.filter= 'brightness (150%)'
+//         }
+//     }
+//     optionsColor.addEventListener ('click', seleccionarFiltro);
+// }
+
+// optionsColor.addEventListener ('click', () => {
+//     for ( i=0; i < optionsColor.length; i++){
+//         if(value==lighten){
+//             url.style.filter= 'brightness (150%)'
+//         }
+//     }
+// })
 
 
