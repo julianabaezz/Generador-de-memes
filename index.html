@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -12,181 +11,196 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="texto.css" />
 
-    <script src="https://kit.fontawesome.com/4df7e684b7.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/4df7e684b7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body class="dark">
+  <body class="dark">
     <header>
-        <h1>Generador de Memes</h1>
-        <nav>
-            <button id= "btn-img-aside" class="button-nav">
-                <i class="fas fa-image"><span class="nav-icon">Imagen</span></i>
-            </button>
-            <button id= "btn-txt-aside" class="button-nav">
-                <i class="fas fa-font"><span class="nav-icon">Texto</span></i>
-            </button>
-            <button id= "btn-theme" class="button-nav">
-                <i class="fas fa-lightbulb"><span id="text-theme"class="nav-icon"> Modo claro </span></i>
-            </button>
-        </nav>
+      <h1>Generador de Memes</h1>
+      <nav>
+        <button id="btn-img-aside" class="button-nav">
+          <i class="fas fa-image"><span class="nav-icon">Imagen</span></i>
+        </button>
+        <button id="btn-txt-aside" class="button-nav">
+          <i class="fas fa-font"><span class="nav-icon">Texto</span></i>
+        </button>
+        <button id="btn-theme" class="button-nav">
+          <i class="fas fa-lightbulb"
+            ><span id="text-theme" class="nav-icon"> Modo claro </span></i
+          >
+        </button>
+      </nav>
     </header>
 
     <div class="container">
-        <main>
-            <section>
-                <div class="top-text">TOP TEXT</div>
-                <div class="image">
-                </div>
-                <div class="bottom-text">BOTTOM TEXT</div>
-            </section>
-            <div class="download">
-                <button><i class="fas fa-download"></i>Descargar meme</button>
-            </div>
-        </main>
+      <main>
+        <section>
+          <div class="top-text">TOP TEXT</div>
+          <div class="image"></div>
+          <div class="bottom-text">BOTTOM TEXT</div>
+        </section>
+        <div class="download">
+          <button><i class="fas fa-download"></i>Descargar meme</button>
+        </div>
+      </main>
 
-        <aside>
+      <aside>
         <div class="aside-txt">
-            <h2>TEXTO</h2>
+          <h2>TEXTO</h2>
 
-            <form>
-                <div class="superior flex-column mb-10px">
-                    <label for="top-text">SUPERIOR</label>
-                    <textarea type="text" id="top-text" placeholder="TOP TEXT"></textarea>
-                    <div>
-                        <input type="checkbox" />
-                        <label>Sin texto superior</label>
-                    </div>
+          <form>
+            <div class="superior flex-column mb-10px">
+              <label for="top-text">SUPERIOR</label>
+              <textarea
+                type="text"
+                id="top-text"
+                placeholder="TOP TEXT"
+              ></textarea>
+              <div>
+                <input id="check-top-text" type="checkbox" />
+                <label>Sin texto superior</label>
+              </div>
+            </div>
+
+            <div class="inferior flex-column mb-10px">
+              <label for="bottom-text">INFERIOR</label>
+              <textarea
+                name=""
+                type="text"
+                id="bottom-text"
+                placeholder="BOTTOM TEXT"
+              ></textarea>
+              <div>
+                <input id="check-bottom-text" type="checkbox" />
+                <label>Sin texto superior</label>
+              </div>
+            </div>
+
+            <div class="fuente flex-column mb-10px">
+              <label for="idFonts">FUENTE</label>
+              <select name="idFonts">
+                <option value="AR">Arial</option>
+                <option value="AR-BL">Arial Black</option>
+                <option value="AT">American Typewriter</option>
+                <option value="AM">Andale Mono</option>
+                <option value="CS">Comic Sans MS</option>
+                <option value="HE">Helvetica</option>
+                <option value="IM">Impact</option>
+                <option value="VE">Verdana</option>
+                <option value="TI">Times New Roman</option>
+              </select>
+
+              <div class="option-text flex">
+                <input class="input-fuente" type="number" value="12" />
+                <div class="btn-fuente">
+                  <button class="center">
+                    <i class="fas fa-align-left"></i>
+                  </button>
+                  <button class="center">
+                    <i class="fas fa-align-center"></i>
+                  </button>
+                  <button class="center">
+                    <i class="fas fa-align-right"></i>
+                  </button>
                 </div>
-
-                <div class="inferior flex-column mb-10px">
-                    <label for="bottom-text">INFERIOR</label>
-                    <textarea name="" id="" type="text" id="bottom-text" placeholder="BOTTOM TEXT"></textarea>
-                    <div>
-                        <input type="checkbox" />
-                        <label>Sin texto superior</label>
-                    </div>
+              </div>
+            </div>
+            <div class="colors-container mb-10px">
+              <div class="color-background-container flex">
+                <div class="color">
+                  <label>COLOR</label>
+                  <div>
+                    <input type="color" />
+                    <span>#000000</span>
+                  </div>
                 </div>
-
-                <div class="fuente flex-column mb-10px">
-                    <label for="idFonts">FUENTE</label>
-                    <select name="idFonts">
-                        <option value="AR">Arial</option>
-                        <option value="AR-BL">Arial Black</option>
-                        <option value="AT">American Typewriter</option>
-                        <option value="AM">Andale Mono</option>
-                        <option value="CS">Comic Sans MS</option>
-                        <option value="HE">Helvetica</option>
-                        <option value="IM">Impact</option>
-                        <option value="VE">Verdana</option>
-                        <option value="TI">Times New Roman</option>
-                    </select>
-
-                    <div class="option-text flex">
-                        <input class="input-fuente" type="number" value="12" />
-                        <div class="btn-fuente">
-                            <button class="center"><i class="fas fa-align-left"></i></button>
-                            <button class="center"><i class="fas fa-align-center"></i></button>
-                            <button class="center"><i class="fas fa-align-right"></i></button>
-                        </div>
-                    </div>
+                <div class="background">
+                  <label>FONDO</label>
+                  <div>
+                    <input type="color" />
+                    <span>#000000</span>
+                  </div>
                 </div>
-                <div class="colors-container mb-10px">
-                    <div class="color-background-container flex">
-                        <div class="color">
-                            <label>COLOR</label>
-                            <div>
-                                <input type="color" />
-                                <span>#000000</span>
-                            </div>
-                        </div>
-                        <div class="background">
-                            <label>FONDO</label>
-                            <div>
-                                <input type="color" />
-                                <span>#000000</span>
-                            </div>
-                        </div>
-                    </div>                    
-                    <div>
-                        <input type="checkbox" />
-                        <label>Fondo transparente</label>
-                    </div>
-                    <div class="border-container mb-10px">
-                        <label>CONTORNO</label>
-                        <div class="border-options mt-5px">
-                            <button type="button">Ninguno</button>
-                            <button type="button">Claro</button>
-                            <button type="button">Oscuro</button>
-                        </div>
-                    </div>
-
-                    <div class="line-container flex-column mb-10px">
-                        <label for="espaciedad">ESPACIADO</label>
-                        <input type="number" id="espaciedad" />
-                    </div>
-
-                    <div class="space-container flex-column mb-10px">
-                        <label for="">INTERLINEADO</label>
-                        <select name="" id="">
-                            <option value="0.8">0.8</option>
-                            <option value="1">1</option>
-                            <option value="1.2">1.2</option>
-                            <option value="1.5">1.5</option>
-                            <option value="2">2</option>
-                            <option value="2.5">2.5</option>
-                        </select>
-                    </div>
+              </div>
+              <div>
+                <input type="checkbox" />
+                <label>Fondo transparente</label>
+              </div>
+              <div class="border-container mb-10px">
+                <label>CONTORNO</label>
+                <div class="border-options mt-5px">
+                  <button type="button">Ninguno</button>
+                  <button type="button">Claro</button>
+                  <button type="button">Oscuro</button>
                 </div>
-            </form>
-        </div>
+              </div>
 
-            <div class="aside-img hidden">
-            <h2>IMAGEN</h2>
+              <div class="line-container flex-column mb-10px">
+                <label for="espaciedad">ESPACIADO</label>
+                <input type="number" id="espaciedad" />
+              </div>
 
-            <form>
-                <label for="url">URL</label>
-                <input id="url" type= "url" placeholder="ingrese una imagen"   />
-
-                <label for="img-color">FONDO</label>
-                <input id="img-color" type="color" />
-                <select class="options-color" name="" id="">
-                    <option value="none">Ninguno</option>
-                    <option value="lighten">Aclarar</option>
-                    <option value="darken">Oscurecer</option>
-                    <option value="difference">Diferencia</option>
-                    <option value="luminosity">Luminosidad</option>
-                    <option value="multiply">Multiplicar</option>
+              <div class="space-container flex-column mb-10px">
+                <label for="">INTERLINEADO</label>
+                <select name="" id="">
+                  <option value="0.8">0.8</option>
+                  <option value="1">1</option>
+                  <option value="1.2">1.2</option>
+                  <option value="1.5">1.5</option>
+                  <option value="2">2</option>
+                  <option value="2.5">2.5</option>
                 </select>
-
-                <label for="">FILTROS</label>
-                <p>Brillo</p>
-                <input type="range" />
-                <p>Opacidad</p>
-                <input type="range" />
-                <p>Contraste</p>
-                <input type="range" />
-                <p>Desenfoque</p>
-                <input type="range" />
-                <p>Escala de grises</p>
-                <input type="range" />
-                <p>Sepia</p>
-                <input type="range" />
-                <p>Hue</p>
-                <input type="range" />
-                <p>Saturado</p>
-                <input type="range" />
-                <p>Negativo</p>
-                <input type="range" />
-                <button>Restablecer filtros</button>
-
-            </form>
+              </div>
+            </div>
+          </form>
         </div>
 
-        </aside>
+        <div class="aside-img hidden">
+          <h2>IMAGEN</h2>
 
+          <form>
+            <label for="url">URL</label>
+            <input id="url" type="url" placeholder="ingrese una imagen" />
+
+            <label for="img-color">FONDO</label>
+            <input id="img-color" type="color" />
+            <select class="options-color" name="" id="">
+              <option value="none">Ninguno</option>
+              <option value="lighten">Aclarar</option>
+              <option value="darken">Oscurecer</option>
+              <option value="difference">Diferencia</option>
+              <option value="luminosity">Luminosidad</option>
+              <option value="multiply">Multiplicar</option>
+            </select>
+
+            <label for="">FILTROS</label>
+            <p>Brillo</p>
+            <input type="range" />
+            <p>Opacidad</p>
+            <input type="range" />
+            <p>Contraste</p>
+            <input type="range" />
+            <p>Desenfoque</p>
+            <input type="range" />
+            <p>Escala de grises</p>
+            <input type="range" />
+            <p>Sepia</p>
+            <input type="range" />
+            <p>Hue</p>
+            <input type="range" />
+            <p>Saturado</p>
+            <input type="range" />
+            <p>Negativo</p>
+            <input type="range" />
+            <button>Restablecer filtros</button>
+          </form>
+        </div>
+      </aside>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
