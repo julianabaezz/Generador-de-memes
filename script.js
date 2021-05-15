@@ -43,6 +43,8 @@ imgColor.addEventListener ('input', () =>{
 })
 
 
+// HOLA
+
 
 // for (let i=0; i < optionsColor.length; i++){
 //     const seleccionarFiltro = (e) =>{
