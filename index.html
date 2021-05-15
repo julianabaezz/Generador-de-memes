@@ -6,10 +6,10 @@
     <title>Document</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="texto.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/texto.css" />
 
     <script
       src="https://kit.fontawesome.com/4df7e684b7.js"
@@ -48,6 +48,7 @@
       </main>
 
       <aside>
+        <!-- ----------TEXTO-------------->
         <div class="aside-txt">
           <h2>TEXTO</h2>
 
@@ -158,6 +159,8 @@
           </form>
         </div>
 
+        <!-- ----------IMAGEN-------------->
+
         <div class="aside-img hidden">
           <h2>IMAGEN</h2>
 
@@ -167,8 +170,8 @@
 
             <label for="img-color">FONDO</label>
             <input id="img-color" type="color" />
-            <select class="options-color" name="" id="">
-              <option value="none">Ninguno</option>
+            <select name="" id="options-filter-bg">
+              <option value="unset">Ninguno</option>
               <option value="lighten">Aclarar</option>
               <option value="darken">Oscurecer</option>
               <option value="difference">Diferencia</option>
@@ -176,31 +179,35 @@
               <option value="multiply">Multiplicar</option>
             </select>
 
-            <label for="">FILTROS</label>
-            <p>Brillo</p>
-            <input type="range" />
-            <p>Opacidad</p>
-            <input type="range" />
-            <p>Contraste</p>
-            <input type="range" />
-            <p>Desenfoque</p>
-            <input type="range" />
-            <p>Escala de grises</p>
-            <input type="range" />
-            <p>Sepia</p>
-            <input type="range" />
-            <p>Hue</p>
-            <input type="range" />
-            <p>Saturado</p>
-            <input type="range" />
-            <p>Negativo</p>
-            <input type="range" />
+            <h3>FILTROS</h3>
+            <div class="flex-column">
+            <label for="brightness">Brillo</label>
+            <input class="input-range" id="brightness" type="range" min="0" max="1" step="0.1" value="1"/>
+            <label for="opacity">Opacidad</label>
+            <input class="input-range" id= "opacity" type="range" min="0" max="1" step="0.1" value="1"/>
+            <label for="contrast">Contraste</label>
+            <input class="input-range" id="contrast" type="range" min="100" max="1000" step="1" value="100"/>
+            <label for="blur">Desenfoque</label>
+            <input class="input-range" id="blur" type="range" min="0px" max="10px" step="0.1px" />
+            <label for="grayscale">Escala de grises</label>
+            <input class="input-range" id="grayscale" type="range" min="0%" max="100%" step="1%"/>
+            <label for="sepia">Sepia</label>
+            <input class="input-range" id="sepia" type="range" min="0%" max="100%" step="1%"/>
+            <label for="hue">Hue</label>
+            <input class="input-range" id="hue" type="range" min="0deg" max="359deg" step="1deg"/>
+            <label for="saturate">Saturado</label>
+            <input class="input-range" id="saturate" type="range" min="100%" max="1000%" step="10%" />
+            <label for="invert">Negativo</label>
+            <input class="input-range" id="invert" type="range" min="0" max="1" step="0.1" />
             <button>Restablecer filtros</button>
+          </div>
           </form>
         </div>
       </aside>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/image.js"></script>
+    <script src="scripts/text.js"></script>
   </body>
 </html>

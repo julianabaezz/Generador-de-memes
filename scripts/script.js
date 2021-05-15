@@ -1,0 +1,27 @@
+const body = document.body
+const btnImgAside = document.getElementById ('btn-img-aside')
+const btnTxtAside = document.getElementById ('btn-txt-aside')
+const btnTheme = document.getElementById ('btn-theme')
+const textTheme = document.getElementById ('text-theme')
+
+// ------HEADER
+// --Boton imagen
+btnImgAside.addEventListener('click', ()=> {
+    asideImg.classList.remove('hidden')
+    asideTxt.classList.add('hidden')
+})
+// --Boton texto
+btnTxtAside.addEventListener('click', ()=> {
+    asideImg.classList.add('hidden')
+    asideTxt.classList.remove('hidden')
+})
+// --Boton tema oscuro/claro
+btnTheme.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    body.classList.toggle('light');
+    if(body.className == 'dark'){
+        textTheme.innerText="Modo claro"
+    }else{
+        textTheme.innerText="Modo oscuro"
+    }
+});
