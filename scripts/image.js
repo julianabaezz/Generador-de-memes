@@ -15,8 +15,8 @@ const sepiaFilter = document.getElementById('sepia')
 const hueFilter = document.getElementById('hue')
 const saturateFilter = document.getElementById('saturate')
 const invertFilter = document.getElementById('invert')
-//const resetBtn = document.getElementById('reset-btn')
-//const imageForm = document.getElementById('imageForm')
+const resetBtn = document.getElementById('reset-btn')
+const imageForm = document.getElementById('imageForm')
 
 url.addEventListener ('change',  () => {
     image.style.backgroundImage= (`url("${url.value}")`);
@@ -46,8 +46,9 @@ hueFilter.addEventListener('input', updateFilter)
 saturateFilter.addEventListener('input', updateFilter)
 invertFilter.addEventListener('input', updateFilter)
 
-// resetBtn.addEventListener('click', () => {
-//     imageForm.reset()
-// } )
+resetBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    imageForm.reset()   
+} )
 
 
