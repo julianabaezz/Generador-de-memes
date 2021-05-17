@@ -24,9 +24,11 @@ url.addEventListener ('change',  () => {
     image.style.backgroundPosition= 'center'
 
 })
-imgColor.addEventListener ('input', () =>{
+const updateColor = () =>{
     image.style.backgroundColor=(`${imgColor.value}`)
-})
+}
+
+imgColor.addEventListener ('input', updateColor) 
 
 optionsFilterBg.addEventListener('change', () => {
     console.log(optionsFilterBg.value)
@@ -48,7 +50,9 @@ invertFilter.addEventListener('input', updateFilter)
 
 resetBtn.addEventListener('click', (e) => {
     e.preventDefault()
-    imageForm.reset()   
+    imageForm.reset()
+    updateFilter()
+    updateColor()
 } )
 
 
