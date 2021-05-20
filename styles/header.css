@@ -33,7 +33,8 @@ i {
 }
 
 .button-nav:hover {
-    background-color: var(--hover-botones);    
+    background-color: var(--hover-input);
+    cursor: pointer;    
 }
 
 .nav-icon {

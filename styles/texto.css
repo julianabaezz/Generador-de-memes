@@ -26,15 +26,6 @@ select {
     margin: 5px 0;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex {
-    display: flex;
-}
-
 .color, .background {
     width: 50%;
 }
@@ -65,10 +56,3 @@ select {
     
 }
 
-.mt-5px {
-    margin-top: 5px;
-
-}
-.mb-10px{
-    margin-bottom: 10px;
-}

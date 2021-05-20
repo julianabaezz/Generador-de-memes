@@ -27,11 +27,13 @@ body.light {
     --hover-botones: #BDBDBD;
 }
 body.dark {
-    --background-color: #393E49;
+    --background-color: #252935;
     --header-background-color: #191E2B;
     --main-background-color: #30343F;
     --color: #EEEEEE;
-    --hover-botones: #4E5565;
+    --hover-input: #4E5565;
+    --input-color: #393e49;
+    
     
 
 }
@@ -65,6 +67,49 @@ aside::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
 }
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.mt-5px {
+    margin-top: 5px;
+
+}
+.mb-10px{
+    margin-bottom: 10px;
+}
+.input-style{
+    border: none;
+    border-radius: 3px;
+    background-color: var(--input-color);
+}
+.input-style:hover{
+    background-color: var(--hover-input);
+}
+.input-range{
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%; 
+    height: 5px;
+    outline: none;
+    background-color: var(--input-color);
+}
+.input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -5px;    
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: var(--color);
+    cursor: pointer;
+  }
 /* ESTO LO VAMOS A USAR PARA EL JS DE CAMBIO DE MODO OSCUTO A CLARO
 
 aside{
