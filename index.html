@@ -34,9 +34,9 @@
   <div class="container">
     <main>
       <section>
-        <div class="top-text">TOP TEXT</div>
+        <div class="top-text" id="textFontTop">TOP TEXT</div>
         <div class="image"></div>
-        <div class="bottom-text">BOTTOM TEXT</div>
+        <div class="bottom-text" id="textFontBottom">BOTTOM TEXT</div>
       </section>
       <div class="download">
         <button><i class="fas fa-download"></i>Descargar meme</button>
@@ -113,20 +113,20 @@
 
           <div class="fuente flex-column mb-10px">
             <label for="idFonts">FUENTE</label>
-            <select class= "input-style" name="idFonts">
-              <option value="AR">Arial</option>
-              <option value="AR-BL">Arial Black</option>
-              <option value="AT">American Typewriter</option>
-              <option value="AM">Andale Mono</option>
-              <option value="CS">Comic Sans MS</option>
-              <option value="HE">Helvetica</option>
-              <option value="IM">Impact</option>
-              <option value="VE">Verdana</option>
-              <option value="TI">Times New Roman</option>
+            <select class= "input-style" id="optionTextFont" name="idFonts">
+              <option value="Arial">Arial</option>
+              <option value="Arial Black">Arial Black</option>
+              <option value="American Typewriter">American Typewriter</option>
+              <option value="Courier New Black">Andale Mono</option>
+              <option value="Comic Sans MS">Comic Sans MS</option>
+              <option value="Helvetica">Helvetica</option>
+              <option value="Impact">Impact</option>
+              <option value="Verdana">Verdana</option>
+              <option value="Times New Roman">Times New Roman</option>
             </select>
 
             <div class="option-text flex">
-              <input class="input-fuente input-style" type="number" value="12" />
+              <input class="input-fuente input-style" id="fontSize" type="number" value="40" min="12" max="90" />
               <div class="btn-fuente">
                 <button class="center">
                   <i class="fas fa-align-left"></i>
