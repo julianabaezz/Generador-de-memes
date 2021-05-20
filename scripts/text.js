@@ -43,7 +43,6 @@ optionTextFont.addEventListener('change', () => {
 })
 
 fontSize.addEventListener('change', () => {
-    console.log(fontSize.value);
     textFontTop.style.fontSize= fontSize.value+'px';
     textFontBottom.style.fontSize = fontSize.value+'px';    
 })

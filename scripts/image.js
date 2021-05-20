@@ -31,7 +31,6 @@ const updateColor = () =>{
 imgColor.addEventListener ('input', updateColor) 
 
 optionsFilterBg.addEventListener('change', () => {
-    console.log(optionsFilterBg.value)
     image.style.backgroundBlendMode = optionsFilterBg.value;
 
 })
