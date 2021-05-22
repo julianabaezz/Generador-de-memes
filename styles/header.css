@@ -1,43 +1,41 @@
-
 header {
-    background-color: var(--header-background-color);
-    color: var(--color);
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
+	background-color: var(--header-background-color);
+	color: var(--color);
+	flex-basis: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-    margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 i {
-    margin: 0 10px 0 10px;
+	margin: 0 10px 0 10px;
 }
 
 .button-nav {
-    font-size: 14px;
-    font-weight: 400; 
-    margin: 2.5px;
-    padding: 10px 0;
-    border-radius: 3px;
-    background-color: transparent;
-    color: var(--color);
-    border: none;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 2.5px;
+	padding: 10px 0;
+	border-radius: 3px;
+	background-color: transparent;
+	color: var(--color);
+	border: none;
 }
 
 .button-nav:hover {
-    background-color: var(--hover-input);
-    cursor: pointer;    
+	background-color: var(--hover-input);
+	cursor: pointer;
 }
 
 .nav-icon {
-    margin-left: 5px;
-    font-family: 'Open Sans', sans-serif;;
+	margin-left: 5px;
+	font-family: "Open Sans", sans-serif;
 }

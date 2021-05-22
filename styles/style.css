@@ -2,25 +2,22 @@
 
 
 
-* {
-    margin: 0;
-    padding: 0;
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
 body {
+    display: flex;
+    margin: 0;
     height: 100vh;
     background-color: var(--main-background-color);
     font-family: 'Open Sans', sans-serif;
-    position: relative;
-    overflow: scroll;
-    overflow-x: hidden;
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     width: 1px ;
     background-color: black;
 
-}
+} */
 body.light {
     --background-color: #FAFAFA;
     --header-background-color: #E0E0E0; 
@@ -45,18 +42,20 @@ h1 {
     font-weight: 600; 
 }
 
-aside {
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.aside {
+    overflow-y: auto;
+    flex-basis: 340px;
     background-color: var(--background-color);
     color: var(--color);
-    width: 20%;
-    height: 100%;
     overflow: auto;
-    position: fixed;
-    top: 0;
-    right: 0;
     padding: 0 15px;
 }
-aside::-webkit-scrollbar {
+.aside::-webkit-scrollbar {
     width: 1px ;
     background-color: black;
 

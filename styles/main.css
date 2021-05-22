@@ -1,60 +1,66 @@
-main {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.main {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
 }
 
-section {
-    width: 600px;
-    height: 600px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.main-body {
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
 }
 
 .container {
-    background-color: var(--main-background-color);
-    display: flex;
-
+	background-color: var(--main-background-color);
+	display: flex;
 }
 
-.top-text, .bottom-text {
-    background-color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 35px;
-    text-align: center;
-    position: absolute;
+.top-text,
+.bottom-text {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-color: white;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	line-height: 2;
 }
-.top-text{
-    top: 0;
+.top-text {
+	top: 0;
 }
-.bottom-text{
-    bottom: 0;
+.bottom-text {
+	bottom: 0;
 }
-.image{
-    position: absolute;
+.image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .wrapper {
-position: relative;
+	position: relative;
+	width: 600px;
+	height: 600px;
 }
 
 .download button {
-    height: 50px;
-    width: 160px;
-    background-color: #2F7D31;
-    color: white;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    margin: 15px 0 20px;
-    padding-right: 5px;
-    cursor: pointer;
+	height: 50px;
+	width: 160px;
+	background-color: #2f7d31;
+	color: white;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	margin: 15px 0 20px;
+	padding-right: 5px;
+	cursor: pointer;
 }
