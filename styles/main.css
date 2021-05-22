@@ -38,6 +38,8 @@ section {
     display: flex;
     flex-grow: 1;
     background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .download button {

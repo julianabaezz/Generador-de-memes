@@ -23,8 +23,8 @@ const checkTransparent = document.getElementById("checkbox-transparent");
 const textShadowNone = document.getElementById("text-shadow-none");
 const textShadowLight = document.getElementById("text-shadow-light");
 const textShadowDark = document.getElementById("text-shadow-dark");
-const paddingText = document.getElementById('padding-text')
-const lineHeight = document.getElementById('line-height')
+const paddingText = document.getElementById("padding-text");
+const lineHeight = document.getElementById("line-height");
 
 topText.addEventListener("keyup", (e) => {
   topImage.innerText = e.target.value;
@@ -90,34 +90,43 @@ textBackground.addEventListener("input", () => {
   textBackgroundHex.innerText = `${textBackground.value}`;
 });
 
-// checkTransparent.addEventListener("change", (e) => {
-//    if(e.target.checked){
-//     contTextTop.style.backgroundColor = "transparent"
-//    }
-// })
+checkTransparent.addEventListener("change", (e) => {
+   if(e.target.checked){
+    textFontTop.style.backgroundColor = "transparent"
+    textFontBottom.style.backgroundColor = "transparent"
+   }else{
+    textFontTop.style.backgroundColor = `${textBackground.value}`
+    textFontBottom.style.backgroundColor = `${textBackground.value}`
+   }
+})
 
 textShadowNone.addEventListener("click", () => {
   textFontTop.style.textShadow = "none";
+  textFontBottom.style.textShadow = "none";
 });
 
 textShadowLight.addEventListener("click", () => {
   textFontTop.style.textShadow =
+    "rgb(255 255 255) 2px 2px, rgb(255 255 255) -2px 2px, rgb(255 255 255) 2px -2px, rgb(255 255 255) -2px -2px";
+  textFontBottom.style.textShadow =
     "rgb(255 255 255) 2px 2px, rgb(255 255 255) -2px 2px, rgb(255 255 255) 2px -2px, rgb(255 255 255) -2px -2px";
 });
 
 textShadowDark.addEventListener("click", () => {
   textFontTop.style.textShadow =
     "rgb(0, 0, 0) 2px 2px, rgb(0, 0, 0) -2px 2px, rgb(0, 0, 0) 2px -2px, rgb(0, 0, 0) -2px -2px";
+  textFontBottom.style.textShadow =
+    "rgb(0, 0, 0) 2px 2px, rgb(0, 0, 0) -2px 2px, rgb(0, 0, 0) 2px -2px, rgb(0, 0, 0) -2px -2px";
 });
 
 // PREGUNTA: Porque cuando se escribe el numero y se da enter se agrega un flex-start!!!!!!????
 
-paddingText.addEventListener('input', (e) => {
-    textFontTop.style.padding = `${paddingText.value}px 10px`
-    textFontBottom.style.padding = `${paddingText.value}px 10px`
-})
+paddingText.addEventListener("input", (e) => {
+  textFontTop.style.padding = `${paddingText.value}px 10px`;
+  textFontBottom.style.padding = `${paddingText.value}px 10px`;
+});
 
-lineHeight.addEventListener('change', () => {
-    textFontTop.style.lineHeight = `${lineHeight.value}`
-    textFontBottom.style.lineHeight = `${lineHeight.value}`
-})
+lineHeight.addEventListener("change", () => {
+  textFontTop.style.lineHeight = `${lineHeight.value}`;
+  textFontBottom.style.lineHeight = `${lineHeight.value}`;
+});

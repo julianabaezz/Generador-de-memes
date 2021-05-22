@@ -9,6 +9,8 @@
 }
 
 body {
+    height: 100vh;
+    background-color: var(--main-background-color);
     font-family: 'Open Sans', sans-serif;
     position: relative;
     overflow: scroll;
