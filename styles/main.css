@@ -22,7 +22,6 @@ section {
 }
 
 .top-text, .bottom-text {
-    height: 100px;
     width: 600px;
     background-color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -30,6 +29,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 35px;
+    text-align: center;
 }
 
 .image {

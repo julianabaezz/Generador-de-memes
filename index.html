@@ -34,9 +34,9 @@
   <div class="container">
     <main>
       <section>
-        <div class="top-text" id="textFontTop">TOP TEXT</div>
+        <div class="top-text" id="textFontTop"><p>TOP TEXT</p></div>
         <div class="image"></div>
-        <div class="bottom-text" id="textFontBottom">BOTTOM TEXT</div>
+        <div class="bottom-text" id="textFontBottom"><p>BOTTOM TEXT</p></div>
       </section>
       <div class="download">
         <button><i class="fas fa-download"></i>Descargar meme</button>
@@ -107,7 +107,7 @@
             <textarea class= "input-style" name="" type="text" id="bottom-text" placeholder="BOTTOM TEXT"></textarea>
             <div>
               <input id="check-bottom-text" type="checkbox" />
-              <label>Sin texto superior</label>
+              <label>Sin texto inferior</label>
             </div>
           </div>
 
@@ -126,15 +126,15 @@
             </select>
 
             <div class="option-text flex">
-              <input class="input-fuente input-style" id="fontSize" type="number" value="40" min="12" max="90" />
+              <input class="input-fuente input-style" id="fontSize" type="number" value="50" min="12" max="90" />
               <div class="btn-fuente">
-                <button class="center">
+                <button class="center" id="btn-left">
                   <i class="fas fa-align-left"></i>
                 </button>
-                <button class="center">
+                <button class="center" id="btn-center">
                   <i class="fas fa-align-center"></i>
                 </button>
-                <button class="center">
+                <button class="center" id="btn-right">
                   <i class="fas fa-align-right"></i>
                 </button>
               </div>
@@ -145,39 +145,39 @@
               <div class="color">
                 <label>COLOR</label>
                 <div>
-                  <input type="color" />
-                  <span>#000000</span>
+                  <input type="color" id="text-color"/>
+                  <span id="text-color-hex">#000000</span>
                 </div>
               </div>
               <div class="background">
                 <label>FONDO</label>
                 <div>
-                  <input type="color" />
-                  <span>#000000</span>
+                  <input type="color" id="text-background"/>
+                  <span id="text-background-hex">#000000</span>
                 </div>
               </div>
             </div>
             <div>
-              <input type="checkbox" />
+              <input type="checkbox" id="checkbox-transparent" />
               <label>Fondo transparente</label>
             </div>
             <div class="border-container mb-10px">
               <label>CONTORNO</label>
               <div class="border-options mt-5px">
-                <button class= "input-style" type="button">Ninguno</button>
-                <button class= "input-style" type="button">Claro</button>
-                <button class= "input-style" type="button">Oscuro</button>
+                <button class= "input-style" type="button" id="text-shadow-none">Ninguno</button>
+                <button class= "input-style" type="button" id="text-shadow-light">Claro</button>
+                <button class= "input-style" type="button" id="text-shadow-dark">Oscuro</button>
               </div>
             </div>
 
             <div class="line-container flex-column mb-10px">
-              <label for="espaciedad">ESPACIADO</label>
-              <input class= "input-style" type="number" id="espaciedad" />
+              <label for="padding-text">ESPACIADO</label>
+              <input class= "input-style" type="number" id="padding-text" min="20" max="50"/>
             </div>
 
             <div class="space-container flex-column mb-10px">
               <label for="">INTERLINEADO</label>
-              <select class= "input-style" name="" id="">
+              <select class= "input-style" name="" id="line-height">
                 <option value="0.8">0.8</option>
                 <option value="1">1</option>
                 <option value="1.2">1.2</option>
