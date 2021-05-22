@@ -3,6 +3,7 @@ const btnImgAside = document.getElementById ('btn-img-aside')
 const btnTxtAside = document.getElementById ('btn-txt-aside')
 const btnTheme = document.getElementById ('btn-theme')
 const textTheme = document.getElementById ('text-theme')
+const downloadBtn = document.getElementById ('download-btn')
 
 // ------HEADER
 // --Boton imagen
@@ -25,3 +26,11 @@ btnTheme.addEventListener('click', () => {
         textTheme.innerText="Modo oscuro"
     }
 });
+
+// --Boton descarga
+downloadBtn.addEventListener ("click", ()=> {
+domtoimage.toBlob(image)
+    .then(function (blob) {
+        window.saveAs(blob, 'meme.png');
+    });
+})

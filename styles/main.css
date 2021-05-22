@@ -22,7 +22,6 @@ section {
 }
 
 .top-text, .bottom-text {
-    width: 600px;
     background-color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
@@ -31,15 +30,20 @@ section {
     align-items: center;
     padding: 35px;
     text-align: center;
+    position: absolute;
+}
+.top-text{
+    top: 0;
+}
+.bottom-text{
+    bottom: 0;
+}
+.image{
+    position: absolute;
 }
 
-.image {
-    width: 600px;
-    display: flex;
-    flex-grow: 1;
-    background-color: black;
-    flex-direction: column;
-    justify-content: space-between;
+.wrapper {
+position: relative;
 }
 
 .download button {
@@ -52,4 +56,5 @@ section {
     border-radius: 5px;
     margin: 15px 0 20px;
     padding-right: 5px;
+    cursor: pointer;
 }

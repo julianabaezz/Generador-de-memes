@@ -18,6 +18,9 @@ const invertFilter = document.getElementById('invert')
 const resetBtn = document.getElementById('reset-btn')
 const imageForm = document.getElementById('imageForm')
 
+
+
+console.log(image)
 url.addEventListener ('change',  () => {
     image.style.backgroundImage= (`url("${url.value}")`);
     image.style.backgroundSize= 'cover'
