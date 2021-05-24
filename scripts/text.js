@@ -25,7 +25,8 @@ const textShadowLight = document.getElementById("text-shadow-light");
 const textShadowDark = document.getElementById("text-shadow-dark");
 const paddingText = document.getElementById("padding-text");
 const lineHeight = document.getElementById("line-height");
-
+const colorInput = document.getElementById("color-input");
+const backgroundInput = document.getElementById("background-input");
 
 /**
  * **********************************************
@@ -146,3 +147,11 @@ lineHeight.addEventListener("change", () => {
 	textFontTop.style.lineHeight = `${lineHeight.value}`;
 	textFontBottom.style.lineHeight = `${lineHeight.value}`;
 });
+
+colorInput.addEventListener('click', () => {
+	textColor.click();
+})
+
+backgroundInput.addEventListener('click', () => {
+	textBackground.click();
+})
