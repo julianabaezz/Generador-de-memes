@@ -57,7 +57,9 @@
 
     <aside class="aside">
       <!-- ----------IMAGEN-------------->
+      <i id="close-aside" class="close-aside fas fa-times"></i>
       <div class="aside-img">
+       
         <h2>IMAGEN</h2>
         <div class="flex-column">
           <label class="bold-text" for="url">URL</label>
@@ -68,135 +70,134 @@
             placeholder="ingrese una imagen"
           />
         </div>
-        <!-- <form id="imageForm"> -->
-        <label class="bold-text" for="img-color">FONDO</label>
-        <div class="flex space-between space-background">
-          <div id="cont-input" class="cont-input-color">
-            <input
-              class="background-input"
-              id="img-color"
-              type="color"
-              value="#ffffff"
-            />
-            <label
-              class="text-background-color"
-              id="text-input-color"
-              for="img-color"
-              >#000000</label
-            >
+        <form id="imageForm">
+          <label class="bold-text" for="img-color">FONDO</label>
+          <div class="flex space-between space-background">
+            <div id="cont-input" class="cont-input-color">
+              <input
+                class="background-input"
+                id="img-color"
+                type="color"
+                value="#ffffff"
+              />
+              <label
+                class="text-background-color"
+                id="text-input-color"
+                for="img-color"
+                >#000000</label
+              >
+            </div>
+            <select class="input-style" name="" id="options-filter-bg">
+              <option value="unset">Ninguno</option>
+              <option value="lighten">Aclarar</option>
+              <option value="darken">Oscurecer</option>
+              <option value="difference">Diferencia</option>
+              <option value="luminosity">Luminosidad</option>
+              <option value="multiply">Multiplicar</option>
+            </select>
           </div>
-          <select class="input-style" name="" id="options-filter-bg">
-            <option value="unset">Ninguno</option>
-            <option value="lighten">Aclarar</option>
-            <option value="darken">Oscurecer</option>
-            <option value="difference">Diferencia</option>
-            <option value="luminosity">Luminosidad</option>
-            <option value="multiply">Multiplicar</option>
-          </select>
-        </div>
-        <label class="bold-text">FILTROS</label>
-        <div class="flex-column space">
-          <label for="brightness">Brillo</label>
-          <input
-            class="input-range"
-            id="brightness"
-            type="range"
-            min="0"
-            max="1"
-            step="0.1"
-            value="1"
-          />
-          <label for="opacity">Opacidad</label>
-          <input
-            class="input-range"
-            id="opacity"
-            type="range"
-            min="0"
-            max="1"
-            step="0.1"
-            value="1"
-          />
-          <label for="contrast">Contraste</label>
-          <input
-            class="input-range"
-            id="contrast"
-            type="range"
-            min="100"
-            max="1000"
-            step="1"
-            value="100"
-          />
-          <label for="blur">Desenfoque</label>
-          <input
-            class="input-range"
-            id="blur"
-            type="range"
-            min="0"
-            max="10"
-            step="0.1"
-            value="0"
-          />
-          <label for="grayscale">Escala de grises</label>
-          <input
-            class="input-range"
-            id="grayscale"
-            type="range"
-            min="0"
-            max="100"
-            step="1"
-            value="0"
-          />
-          <label for="sepia">Sepia</label>
-          <input
-            class="input-range"
-            id="sepia"
-            type="range"
-            min="0"
-            max="100"
-            step="1"
-            value="0"
-          />
-          <label for="hue">Hue</label>
-          <input
-            class="input-range"
-            id="hue"
-            type="range"
-            min="0"
-            max="359"
-            step="1"
-            value="0"
-          />
-          <label for="saturate">Saturado</label>
-          <input
-            class="input-range"
-            id="saturate"
-            type="range"
-            min="100"
-            max="1000"
-            step="10"
-            value="100"
-          />
-          <label for="invert">Negativo</label>
-          <input
-            class="input-range"
-            id="invert"
-            type="range"
-            min="0"
-            max="1"
-            step="0.1"
-            value="0"
-          />
-          <button class="input-style button" id="reset-btn">
-            Restablecer filtros
-          </button>
-        </div>
-        <!-- </form> -->
+          <label class="bold-text">FILTROS</label>
+          <div class="flex-column space">
+            <label for="brightness">Brillo</label>
+            <input
+              class="input-range"
+              id="brightness"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="1"
+            />
+            <label for="opacity">Opacidad</label>
+            <input
+              class="input-range"
+              id="opacity"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="1"
+            />
+            <label for="contrast">Contraste</label>
+            <input
+              class="input-range"
+              id="contrast"
+              type="range"
+              min="100"
+              max="1000"
+              step="1"
+              value="100"
+            />
+            <label for="blur">Desenfoque</label>
+            <input
+              class="input-range"
+              id="blur"
+              type="range"
+              min="0"
+              max="10"
+              step="0.1"
+              value="0"
+            />
+            <label for="grayscale">Escala de grises</label>
+            <input
+              class="input-range"
+              id="grayscale"
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+            <label for="sepia">Sepia</label>
+            <input
+              class="input-range"
+              id="sepia"
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+            <label for="hue">Hue</label>
+            <input
+              class="input-range"
+              id="hue"
+              type="range"
+              min="0"
+              max="359"
+              step="1"
+              value="0"
+            />
+            <label for="saturate">Saturado</label>
+            <input
+              class="input-range"
+              id="saturate"
+              type="range"
+              min="100"
+              max="1000"
+              step="10"
+              value="100"
+            />
+            <label for="invert">Negativo</label>
+            <input
+              class="input-range"
+              id="invert"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+            />
+            <button class="input-style button" id="reset-btn">
+              Restablecer filtros
+            </button>
+          </div>
+        </form>
       </div>
       <!-- ----------TEXTO-------------->
       <div class="aside-txt hidden">
         <h2>TEXTO</h2>
 
-        <!-- <form> -->
         <div class="superior flex-column mb-20px">
           <label class="bold-text" for="top-text">SUPERIOR</label>
           <textarea
@@ -207,7 +208,9 @@
           ></textarea>
           <div>
             <input id="check-top-text" type="checkbox" />
-            <label for="check-top-text" class="text-check">Sin texto superior</label>
+            <label for="check-top-text" class="text-check"
+              >Sin texto superior</label
+            >
           </div>
         </div>
 
@@ -222,7 +225,9 @@
           ></textarea>
           <div>
             <input id="check-bottom-text" type="checkbox" />
-            <label for="check-bottom-text" class="text-check">Sin texto inferior</label>
+            <label for="check-bottom-text" class="text-check"
+              >Sin texto inferior</label
+            >
           </div>
         </div>
 
@@ -263,15 +268,14 @@
           </div>
         </div>
 
-          <div class="flex-column mb-20px">
+        <div class="flex-column mb-20px">
           <div class="color-background-container flex space-background">
-            
             <div class="flex-column half-space">
               <label class="bold-text">COLOR</label>
               <div id="color-input" class="cont-input-color">
                 <input
                   class="background-input"
-                  type="color" 
+                  type="color"
                   id="text-color"
                   value="#ffffff"
                 />
@@ -289,7 +293,7 @@
               <div id="background-input" class="cont-input-color">
                 <input
                   class="background-input"
-                  type="color" 
+                  type="color"
                   id="text-background"
                   value="#ffffff"
                 />
@@ -301,30 +305,37 @@
                 >
               </div>
             </div>
-            
           </div>
           <div>
             <input type="checkbox" id="checkbox-transparent" />
-            <label for="checkbox-transparent" class="text-check">Fondo transparente</label>
+            <label for="checkbox-transparent" class="text-check"
+              >Fondo transparente</label
+            >
           </div>
         </div>
-        
-         
-
-        
-
-         
 
         <div class="border-container mb-20px">
           <label class="bold-text">CONTORNO</label>
           <div class="border-options mt-5px">
-            <button class="input-style button" type="button" id="text-shadow-none">
+            <button
+              class="input-style button"
+              type="button"
+              id="text-shadow-none"
+            >
               Ninguno
             </button>
-            <button class="input-style button" type="button" id="text-shadow-light">
+            <button
+              class="input-style button"
+              type="button"
+              id="text-shadow-light"
+            >
               Claro
             </button>
-            <button class="input-style button" type="button" id="text-shadow-dark">
+            <button
+              class="input-style button"
+              type="button"
+              id="text-shadow-dark"
+            >
               Oscuro
             </button>
           </div>
@@ -352,7 +363,6 @@
             <option value="2.5">2.5</option>
           </select>
         </div>
-        <!-- </form> -->
       </div>
     </aside>
     <script

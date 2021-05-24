@@ -57,6 +57,7 @@ p {
     overflow: auto;
     padding: 0 15px;
 }
+
 .aside::-webkit-scrollbar {
     width: 1px ;
     background-color: black;
@@ -194,8 +195,31 @@ input[type="color"]::-webkit-color-swatch {
     color: var(--color)
 }
 
+.close-aside{
+    position: fixed;
+    right: 0;
+    display: none;
+    margin: 15px;
+    color: var(--color);
+}
 
 
+@media screen and (max-width: 1300px){
+    .close-aside{
+        display: flex;
+    }
+    .aside{
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:700px){
+    .aside{
+        width: 100%;
+    }
+}
 
 
 
