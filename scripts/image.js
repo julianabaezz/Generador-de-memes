@@ -18,20 +18,26 @@ const invertFilter = document.getElementById('invert')
 const resetBtn = document.getElementById('reset-btn')
 const imageForm = document.getElementById('imageForm')
 
+const textInputColor = document.getElementById("text-input-color");
+const contInputColor = document.getElementById("cont-input")
 
+contInputColor.addEventListener("click", () => {
+	imgColor.click();
+})
 
-console.log(image)
 url.addEventListener ('change',  () => {
     image.style.backgroundImage= (`url("${url.value}")`);
     image.style.backgroundSize= 'cover'
     image.style.backgroundPosition= 'center'
+    
 
 })
 const updateColor = () =>{
     image.style.backgroundColor=(`${imgColor.value}`)
+    textInputColor.innerText = `${imgColor.value}`
 }
 
-imgColor.addEventListener ('input', updateColor) 
+imgColor.addEventListener('input', updateColor) 
 
 optionsFilterBg.addEventListener('change', () => {
     image.style.backgroundBlendMode = optionsFilterBg.value;

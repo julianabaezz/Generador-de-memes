@@ -7,12 +7,6 @@
 
 h2 {
     text-align: center;
-    padding: 20px 0;
-}
-
-input {
-    padding: 10px;
-    margin: 5px 0;
 }
 
 textarea {
@@ -31,6 +25,9 @@ select {
 }
 
 .input-fuente {
+    padding: 10px;
+    margin: 7px 0;
+    outline: none;
     width: 50%;
     margin: 0;
     margin-right: 5px;
@@ -54,5 +51,13 @@ select {
     border-radius: 3px;
     border: 0;
     
+}
+
+.space{
+    margin: 7px 0px;
+}
+
+.space-background{
+    gap: 10px;
 }
 

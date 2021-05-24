@@ -6,18 +6,24 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 10px;
+}
+
+.title{
+	margin: 10px;
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 15px;
 	margin-bottom: 10px;
 }
 
 i {
 	margin: 0 10px 0 10px;
 }
+
+
 
 .button-nav {
 	font-size: 14px;

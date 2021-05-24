@@ -24,6 +24,8 @@ body.light {
     --main-background-color: #EEEEEE;
     --color: #424242;
     --hover-botones: #BDBDBD;
+    --hover-input: #BDBDBD;
+    --input-color: #E0E0E0;
     --thumb-color: #30343F;
 }
 body.dark {
@@ -63,6 +65,12 @@ p {
 .hidden {
     display: none;
 }
+.all-space{
+    width: 100%;
+}
+.half-space{
+    width: 50%;
+}
 .center {
     display: flex;
     justify-content: center;
@@ -85,18 +93,31 @@ p {
 .mb-10px{
     margin-bottom: 10px;
 }
+.mb-20px{
+    margin-bottom: 20px;
+}
 .input-style{
     border: none;
     border-radius: 3px;
     background-color: var(--input-color);
+    color: var(--color);
+    outline:none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 7px 0;
+    outline: none;
+ 
 }
 .input-style:hover{
     background-color: var(--hover-input);
 }
 
 .input-range {
--webkit-appearance: none;
-background: transparent;
+    padding: 10px;
+    margin: 7px 0;
+    outline: none;
+    -webkit-appearance: none;
+    background: transparent;
 }
 
 .input-range::-webkit-slider-runnable-track {
@@ -115,6 +136,66 @@ background: transparent;
     margin-top: -5px;
 
 }
+
+.bold-text{
+    font-weight: bold;
+}
+
+.cont-input-color{
+    margin: 7px 0;
+    width: 100%;
+    background-color: var(--input-color);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.cont-input-color:hover{
+    background-color: var(--hover-input);
+}
+
+input[type="color"]{
+    width: 23px;
+    height: 21px;
+    border:none;
+    margin-right: 5px;
+    border-radius: 50%;
+    background:none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: 1px solid transparent; 
+	border-radius: 50%;
+}
+
+.text-background-color{
+    font-size: 14.5px;
+    text-transform: uppercase;
+}
+
+.button{
+	background-color: var(--input-color);
+	font-size: 14px;
+	font-weight: 400;
+    border:none;
+}
+
+.text-check{
+    font-size: 14px;
+}
+
+.color{
+    color: var(--color)
+}
+
+
+
+
 
 
 /* ESTO LO VAMOS A USAR PARA EL JS DE CAMBIO DE MODO OSCUTO A CLARO

@@ -26,6 +26,7 @@ const textShadowDark = document.getElementById("text-shadow-dark");
 const paddingText = document.getElementById("padding-text");
 const lineHeight = document.getElementById("line-height");
 
+
 /**
  * **********************************************
  */
