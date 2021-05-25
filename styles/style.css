@@ -219,6 +219,22 @@ input[type="color"]::-webkit-color-swatch {
     .aside{
         width: 100%;
     }
+    .title {
+        font-size: 18px;
+        text-align: center;
+    }
+    /* ------NO NOS TOMA ESTOS CAMBIOS:
+    .wrapper {
+        width: 200px;
+        height: 200px;
+    .top-text {
+            font-size: 30px;
+        }
+    .bottom-text {
+            font-size: 30px;
+        }
+    } */
+
 }
 
 
