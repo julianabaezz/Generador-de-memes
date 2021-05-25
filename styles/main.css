@@ -65,3 +65,40 @@
 	padding-right: 5px;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 1300px){
+    .close-aside{
+        display: flex;
+    }
+    .aside{
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:700px){
+    .aside{
+        width: 100%;
+    	}
+    .title {
+        font-size: 18px;
+        text-align: center;
+    	}
+    .wrapper {
+        width: 350px;
+        height: 350px;
+        }
+    .top-text {
+            font-size: 30px;
+        }
+    .bottom-text {
+            font-size: 30px;
+        }
+	}
+	@media screen and (max-width:350px){
+		.wrapper{
+		width: 305px;
+        height: 305px;
+		}
+	}

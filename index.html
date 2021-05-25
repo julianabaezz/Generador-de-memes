@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editor de memes</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/style.css" />
@@ -22,14 +23,14 @@
       <header class="main-header">
         <h1 class="title">Generador de Memes</h1>
         <nav>
-          <button id="btn-img-aside" class="button-nav">
-            <i class="fas fa-image"><span class="nav-icon">Imagen</span></i>
+          <button aria-label="Abrir editor de imagen"id="btn-img-aside" class="button-nav">
+            <i aria-hidden= "true" class="fas fa-image"><span class="nav-icon">Imagen</span></i>
           </button>
-          <button id="btn-txt-aside" class="button-nav">
-            <i class="fas fa-font"><span class="nav-icon">Texto</span></i>
+          <button aria-label="Abrir editor de texto" id="btn-txt-aside" class="button-nav">
+            <i aria-hidden= "true" class="fas fa-font"><span class="nav-icon">Texto</span></i>
           </button>
-          <button id="btn-theme" class="button-nav">
-            <i class="fas fa-lightbulb"
+          <button aria-label="Cambiar tema" id="btn-theme" class="button-nav">
+            <i aria-hidden= "true" class="fas fa-lightbulb"
               ><span id="text-theme" class="nav-icon"> Modo claro </span></i
             >
           </button>
@@ -38,18 +39,18 @@
 
       <section class="main-body">
         <div class="wrapper">
-          <div class="top-text" id="textFontTop">
-            <p>TOP TEXT</p>
+          <div aria-label="Texto superior del meme" class="top-text" id="textFontTop">
+            <p aria-hidden= "true">TOP TEXT</p>
           </div>
-          <div class="image"></div>
-          <div class="bottom-text" id="textFontBottom">
-            <p>BOTTOM TEXT</p>
+          <div aria-label="Imagen del meme" class="image"></div>
+          <div aria-label="Texto superior del meme" class="bottom-text" id="textFontBottom">
+            <p aria-hidden= "true">BOTTOM TEXT</p>
           </div>
         </div>
 
         <div class="download">
           <button id="download-btn">
-            <i class="fas fa-download"></i>Descargar meme
+            <i aria-hidden= "true" class="fas fa-download"></i>Descargar meme
           </button>
         </div>
       </section>
@@ -57,24 +58,26 @@
 
     <aside class="aside">
       <!-- ----------IMAGEN-------------->
-      <i id="close-aside" class="close-aside fas fa-times"></i>
+      <i aria-label="Cerrar panel" id="close-aside" class="close-aside fas fa-times"></i>
       <div class="aside-img">
-       
+      
         <h2>IMAGEN</h2>
+        <form id="imageForm">
         <div class="flex-column">
           <label class="bold-text" for="url">URL</label>
           <input
+            aria-label="Ingresa el url de una imagen"
             class="input-style"
             id="url"
             type="url"
-            placeholder="ingrese una imagen"
+            placeholder="Ingrese una imagen"
           />
         </div>
-        <form id="imageForm">
           <label class="bold-text" for="img-color">FONDO</label>
           <div class="flex space-between space-background">
             <div id="cont-input" class="cont-input-color">
               <input
+                aria-label= "Elegí un color de fondo"
                 class="background-input"
                 id="img-color"
                 type="color"
@@ -87,7 +90,7 @@
                 >#000000</label
               >
             </div>
-            <select class="input-style" name="" id="options-filter-bg">
+            <select aria-label= "Elegí un filtro para el color" class="input-style" name="" id="options-filter-bg">
               <option value="unset">Ninguno</option>
               <option value="lighten">Aclarar</option>
               <option value="darken">Oscurecer</option>
@@ -97,9 +100,10 @@
             </select>
           </div>
           <label class="bold-text">FILTROS</label>
-          <div class="flex-column space">
+          <div aria-label= "Elegí un filtro" class="flex-column space">
             <label for="brightness">Brillo</label>
             <input
+              aria-label= "Rango para brillo" 
               class="input-range"
               id="brightness"
               type="range"
@@ -107,9 +111,13 @@
               max="1"
               step="0.1"
               value="1"
+              aria-valuemin="0"
+              aria-valuemax= "1"
+              aria-valuenow= "1"
             />
             <label for="opacity">Opacidad</label>
             <input
+              aria-label= "Rango para opacidad"
               class="input-range"
               id="opacity"
               type="range"
@@ -117,9 +125,13 @@
               max="1"
               step="0.1"
               value="1"
+              aria-valuemin="0"
+              aria-valuemax= "1"
+              aria-valuenow= "1"
             />
             <label for="contrast">Contraste</label>
             <input
+              aria-label= "Rango para contraste"
               class="input-range"
               id="contrast"
               type="range"
@@ -127,9 +139,13 @@
               max="1000"
               step="1"
               value="100"
+              aria-valuemin="100"
+              aria-valuemax= "1000"
+              aria-valuenow= "100"
             />
             <label for="blur">Desenfoque</label>
             <input
+              aria-label= "Rango para desenfoque"
               class="input-range"
               id="blur"
               type="range"
@@ -137,9 +153,13 @@
               max="10"
               step="0.1"
               value="0"
+              aria-valuemin="0"
+              aria-valuemax= "10"
+              aria-valuenow= "0"
             />
             <label for="grayscale">Escala de grises</label>
             <input
+              aria-label= "Rango para escala de grises"
               class="input-range"
               id="grayscale"
               type="range"
@@ -147,9 +167,13 @@
               max="100"
               step="1"
               value="0"
+              aria-valuemin="0"
+              aria-valuemax= "100"
+              aria-valuenow= "0"
             />
             <label for="sepia">Sepia</label>
             <input
+              aria-label= "Rango para sepia"
               class="input-range"
               id="sepia"
               type="range"
@@ -157,9 +181,13 @@
               max="100"
               step="1"
               value="0"
+              aria-valuemin="0"
+              aria-valuemax= "100"
+              aria-valuenow= "0"
             />
             <label for="hue">Hue</label>
             <input
+              aria-label= "Rango para hue"
               class="input-range"
               id="hue"
               type="range"
@@ -167,9 +195,13 @@
               max="359"
               step="1"
               value="0"
+              aria-valuemin="0"
+              aria-valuemax= "359"
+              aria-valuenow= "0"
             />
             <label for="saturate">Saturado</label>
             <input
+              aria-label= "Rango para saturación"
               class="input-range"
               id="saturate"
               type="range"
@@ -177,9 +209,13 @@
               max="1000"
               step="10"
               value="100"
+              aria-valuemin="100"
+              aria-valuemax= "1000"
+              aria-valuenow= "100"
             />
             <label for="invert">Negativo</label>
             <input
+              aria-label= "Rango para negativo"
               class="input-range"
               id="invert"
               type="range"
@@ -187,6 +223,9 @@
               max="1"
               step="0.1"
               value="0"
+              aria-valuemin="0"
+              aria-valuemax= "1"
+              aria-valuenow= "0"
             />
             <button class="input-style button" id="reset-btn">
               Restablecer filtros
@@ -201,13 +240,14 @@
         <div class="superior flex-column mb-20px">
           <label class="bold-text" for="top-text">SUPERIOR</label>
           <textarea
+            aria-label="Ingersá el texto superior del meme"
             class="input-style"
             type="text"
             id="top-text"
             placeholder="TOP TEXT"
           ></textarea>
           <div>
-            <input id="check-top-text" type="checkbox" />
+            <input aria-label="Eliminar texto superior" id="check-top-text" type="checkbox" />
             <label for="check-top-text" class="text-check"
               >Sin texto superior</label
             >
@@ -217,6 +257,7 @@
         <div class="inferior flex-column mb-20px">
           <label class="bold-text" for="bottom-text">INFERIOR</label>
           <textarea
+            aria-label="Ingersá el texto inferior del meme"
             class="input-style"
             name=""
             type="text"
@@ -224,7 +265,7 @@
             placeholder="BOTTOM TEXT"
           ></textarea>
           <div>
-            <input id="check-bottom-text" type="checkbox" />
+            <input aria-label="Eliminar texto inferior" id="check-bottom-text" type="checkbox" />
             <label for="check-bottom-text" class="text-check"
               >Sin texto inferior</label
             >
@@ -233,7 +274,7 @@
 
         <div class="fuente flex-column mb-20px">
           <label class="bold-text" for="idFonts">FUENTE</label>
-          <select class="input-style" id="optionTextFont" name="idFonts">
+          <select aria-label="Elegí una fuente para el texto" class="input-style" id="optionTextFont" name="idFonts">
             <option value="Arial">Arial</option>
             <option value="Arial Black">Arial Black</option>
             <option value="American Typewriter">American Typewriter</option>
@@ -247,22 +288,26 @@
 
           <div class="option-text flex">
             <input
+              aria-label="Elegí el tamaño de la fuente"
               class="input-fuente input-style"
               id="fontSize"
               type="number"
               value="50"
               min="12"
               max="90"
+              aria-valuemin="12"
+              aria-valuemax= "90"
+              aria-valuenow= "50"
             />
             <div class="btn-fuente">
-              <button class="center button" id="btn-left">
-                <i class="fas fa-align-left color"></i>
+              <button aria-label="Alinear texto a la izquierda" class="center button" id="btn-left">
+                <i aria-hidden="true"  class="fas fa-align-left color"></i>
               </button>
-              <button class="center button" id="btn-center">
-                <i class="fas fa-align-center color"></i>
+              <button aria-label="Alinear texto al centro" class="center button" id="btn-center">
+                <i aria-hidden="true" class="fas fa-align-center color"></i>
               </button>
-              <button class="center button" id="btn-right">
-                <i class="fas fa-align-right color"></i>
+              <button aria-label="Alinear texto a la derecha" class="center button" id="btn-right">
+                <i aria-hidden="true" class="fas fa-align-right color"></i>
               </button>
             </div>
           </div>
@@ -271,37 +316,41 @@
         <div class="flex-column mb-20px">
           <div class="color-background-container flex space-background">
             <div class="flex-column half-space">
-              <label class="bold-text">COLOR</label>
+              <label for="text-color" class="bold-text">COLOR</label>
               <div id="color-input" class="cont-input-color">
                 <input
+                  aria-label="Color del texto"
                   class="background-input"
                   type="color"
                   id="text-color"
                   value="#ffffff"
+                  aria-valuenow="#ffffff"
                 />
-                <label
+                <span
                   class="text-background-color"
                   id="text-color-hex"
-                  for="text-color"
-                  >#000000</label
+                  aria-hidden= "true"
+                  >#000000</span
                 >
               </div>
             </div>
 
             <div class="flex-column half-space">
-              <label class="bold-text">FONDO</label>
+              <label class="bold-text" for="text-background">FONDO</label>
               <div id="background-input" class="cont-input-color">
                 <input
+                  aria-label="Color de fondo del texto"
                   class="background-input"
                   type="color"
                   id="text-background"
                   value="#ffffff"
+                  aria-valuenow="#ffffff"
                 />
-                <label
+                <span
                   class="text-background-color"
                   id="text-background-hex"
-                  for="text-background"
-                  >#000000</label
+                  aria-hidden= "true"
+                  >#000000</span
                 >
               </div>
             </div>
@@ -315,7 +364,7 @@
         </div>
 
         <div class="border-container mb-20px">
-          <label class="bold-text">CONTORNO</label>
+          <h4 aria-label="Elegi un contorno para el texto" class="bold-text">CONTORNO</h4>
           <div class="border-options mt-5px">
             <button
               class="input-style button"
@@ -349,11 +398,13 @@
             id="padding-text"
             min="20"
             max="50"
+            aria-valuemin="20"
+            aria-valuemax= "50"
           />
         </div>
 
         <div class="space-container flex-column mb-20px">
-          <label class="bold-text" for="">INTERLINEADO</label>
+          <label class="bold-text" for="line-height">INTERLINEADO</label>
           <select class="input-style" name="" id="line-height">
             <option value="0.8">0.8</option>
             <option value="1">1</option>

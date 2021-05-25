@@ -9,7 +9,7 @@
 body {
     display: flex;
     margin: 0;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: var(--main-background-color);
     font-family: 'Open Sans', sans-serif;
 }
@@ -203,59 +203,3 @@ input[type="color"]::-webkit-color-swatch {
     color: var(--color);
 }
 
-
-@media screen and (max-width: 1300px){
-    .close-aside{
-        display: flex;
-    }
-    .aside{
-        position: absolute;
-        right: 0;
-        z-index: 1;
-    }
-}
-
-@media screen and (max-width:700px){
-    .aside{
-        width: 100%;
-    }
-    .title {
-        font-size: 18px;
-        text-align: center;
-    }
-    /* ------NO NOS TOMA ESTOS CAMBIOS:
-    .wrapper {
-        width: 200px;
-        height: 200px;
-    .top-text {
-            font-size: 30px;
-        }
-    .bottom-text {
-            font-size: 30px;
-        }
-    } */
-
-}
-
-
-
-/* ESTO LO VAMOS A USAR PARA EL JS DE CAMBIO DE MODO OSCUTO A CLARO
-
-aside{
-    background-color: #f4f4f4 ;
-}
-
-body {
-    background-color: #EDEDED ;
-    font-family: 'Open Sans', sans-serif;
-}
-
-header {
-    background-color: #E0E0E0;
-    color: #333030;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
