@@ -7,12 +7,12 @@
 - [Lourdes Luna](https://github.com/lourdeslunaweb)
 - [Alexandra Quijano](https://github.com/Alexaquijano22)
 
+### En este proyecto realizamos un editor para generar memes. Creamos una aplicación con la que puede manipular el texto y la imagen de un meme y usamos JavaScript para modificar dinámicamente el contenido y las propiedades. Pudiendo descargar el meme para usarlo y/o compartilo donde quieras.
+
 ### Tecnologías utilizadas:
 - HTML5
 - CSS3
 - JavaScript
-
-### En este proyecto realizamos un editor para generar memes. Creamos una aplicación con la que puede manipular el texto y la imagen de un meme y usamos JavaScript para modificar dinámicamente el contenido y las propiedades. Pudiendo descargar el meme para usarlo y/o compartilo donde quieras.
 
 ### FUNCIONALIDADES
 
@@ -51,7 +51,7 @@
 - Cambiar alto de línea de texto
 
 #### Accesibilidad
-### Básica
+##### Básica
 
 - Los colores tienen un contraste adecuado
 - Las imágenes tiene el atributo alt que corresponde
