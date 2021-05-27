@@ -3,7 +3,6 @@
 	display: flex;
 	flex-direction: column;
 }
-
 .main-body {
 	overflow-y: auto;
 	display: flex;
@@ -11,12 +10,10 @@
 	align-items: center;
 	flex-grow: 1;
 }
-
 .container {
 	background-color: var(--main-background-color);
 	display: flex;
 }
-
 .top-text,
 .bottom-text {
 	position: absolute;
@@ -46,13 +43,11 @@
 	left: 0;
 	background-color: #000000;
 }
-
 .wrapper {
 	position: relative;
 	width: 600px;
 	height: 600px;
 }
-
 .download button {
 	height: 50px;
 	width: 160px;
@@ -66,39 +61,3 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1300px){
-    .close-aside{
-        display: flex;
-    }
-    .aside{
-        position: absolute;
-        right: 0;
-        z-index: 1;
-    }
-}
-
-@media screen and (max-width:700px){
-    .aside{
-        width: 100%;
-    	}
-    .title {
-        font-size: 18px;
-        text-align: center;
-    	}
-    .wrapper {
-        width: 350px;
-        height: 350px;
-        }
-    .top-text {
-            font-size: 30px;
-        }
-    .bottom-text {
-            font-size: 30px;
-        }
-	}
-	@media screen and (max-width:350px){
-		.wrapper{
-		width: 305px;
-        height: 305px;
-		}
-	}

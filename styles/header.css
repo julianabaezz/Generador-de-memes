@@ -8,23 +8,14 @@ header {
 	align-items: center;
 	padding: 10px;
 }
-
-.title{
-	margin: 10px;
-}
-
 nav {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 10px;
 }
-
-i {
-	margin: 0 10px 0 10px;
+.title{
+	margin: 10px;
 }
-
-
-
 .button-nav {
 	font-size: 14px;
 	font-weight: 400;
@@ -35,12 +26,10 @@ i {
 	color: var(--color);
 	border: none;
 }
-
 .button-nav:hover {
 	background-color: var(--hover-input);
 	cursor: pointer;
 }
-
 .nav-icon {
 	margin-left: 5px;
 	font-family: "Open Sans", sans-serif;
