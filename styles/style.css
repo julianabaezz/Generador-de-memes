@@ -212,8 +212,8 @@ input[type="color"]::-webkit-color-swatch {
         text-align: center;
     	}
     .wrapper {
-        width: 350px;
-        height: 350px;
+        width: 345px !important;
+        height: 345px !important;
         }
     .top-text {
             font-size: 30px;
@@ -224,7 +224,7 @@ input[type="color"]::-webkit-color-swatch {
 	}
 	@media screen and (max-width:350px){
 		.wrapper{
-		width: 305px;
-        height: 305px;
+		width: 300px !important;
+        height: 300px !important;
 		}
 	}
