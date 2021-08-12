@@ -79,20 +79,20 @@ fontSize.addEventListener("change", () => {
 
 alignLeftBtn.addEventListener("click", (e) => {
 	e.preventDefault()
-	textFontTop.style.justifyContent = "flex-start"
-	textFontBottom.style.justifyContent = "flex-start"
+	textFontTop.style.textAlign = "flex-start"
+	textFontBottom.style.textAlign = "flex-start"
 })
 
 alignRightBtn.addEventListener("click", (e) => {
 	e.preventDefault()
-	textFontTop.style.justifyContent = "flex-end"
-	textFontBottom.style.justifyContent = "flex-end"
+	textFontTop.style.textAlign = "flex-end"
+	textFontBottom.style.textAlign = "flex-end"
 })
 
 alignCenterBtn.addEventListener("click", (e) => {
 	e.preventDefault()
-	textFontTop.style.justifyContent = "center"
-	textFontBottom.style.justifyContent = "center"
+	textFontTop.style.textAlign = "center"
+	textFontBottom.style.textAlign = "center"
 })
 
 textColor.addEventListener("input", () => {

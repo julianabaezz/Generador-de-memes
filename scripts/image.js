@@ -23,8 +23,9 @@ contInputColor.addEventListener("click", () => {
     imgColor.click()
 })
 
-url.addEventListener('change', () => {
-    image.style.backgroundImage = (`url("${url.value}")`)
+url.addEventListener('change', (e) => {
+	const input = e.target
+    image.style.backgroundImage = `url("${input.value}")`
     image.style.backgroundSize = 'cover'
     image.style.backgroundPosition = 'center'
 })
@@ -40,9 +41,11 @@ optionsFilterBg.addEventListener('change', () => {
     image.style.backgroundBlendMode = optionsFilterBg.value
 
 })
+
 const updateFilter = () => {
     image.style.filter = `brightness(${brightnessFilter.value}) opacity(${opacityFilter.value}) contrast(${contrastFilter.value}%) blur(${blurFilter.value}px) grayscale(${grayscaleFilter.value}%) sepia(${sepiaFilter.value}%) hue-rotate(${hueFilter.value}deg) saturate(${saturateFilter.value}%) invert(${invertFilter.value})`
 }
+
 brightnessFilter.addEventListener('input', updateFilter)
 opacityFilter.addEventListener('input', updateFilter)
 contrastFilter.addEventListener('input', updateFilter)
